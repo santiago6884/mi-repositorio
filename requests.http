@@ -1,0 +1,32 @@
+###
+POST http://localhost:9000/api/users HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "john conway",
+    "age": "39",
+    "email": "conwayjohn2@email.com"
+
+
+}
+
+###
+GET http://localhost:9000/api/users HTTP/1.1
+
+###
+GET http://localhost:9000/api/users/662eba3a2c4674fda6f36305 HTTP/1.1
+
+###
+PUT http://localhost:9000/api/users/662eba3a2c4674fda6f36305 HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "george conway",
+    "age": "39",
+    "email": "conwaygeorge2@email.com"
+
+
+}
+
+###
+DELETE http://localhost:9000/api/users/662eb9e12c4674fda6f36303 HTTP/1.1
